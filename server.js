@@ -23,9 +23,9 @@ app.post("/subscribe", async (req, res) => {
 
   // Airtable configuration
   const AIRTABLE_API_KEY =
-    "patAWUiPAHTejf4yB.4ed0757016b68a80684944885afc2cb4540f5013006b7bbdd44ac73ad6e68901"; // remplace par ton vrai token
-  const BASE_ID = "app6Ahc99UY2Kg7zQ"; // remplace par ton vrai Base ID
-  const TABLE_ID = "tblCk7AM32KvbNnT1"; // remplace par ton vrai Table ID
+    "patAWUiPAHTejf4yB.4ed0757016b68a80684944885afc2cb4540f5013006b7bbdd44ac73ad6e68901";
+  const BASE_ID = "app6Ahc99UY2Kg7zQ";
+  const TABLE_ID = "tblCk7AM32KvbNnT1";
 
   try {
     const response = await fetch(
