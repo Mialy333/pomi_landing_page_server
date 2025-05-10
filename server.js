@@ -48,10 +48,15 @@ app.post("/subscribe", async (req, res) => {
       }
     );
 
+    const airtableResponse = await response.json();
+
     if (!response.ok) {
-      console.error("Airtable error:", await response.text());
+      console.error("Airtable error:", airtableResponse);
       return res.status(500).send("Airtable error");
     }
+
+    console.log("✅ Email saved to Airtable");
+    console.log("Airtable API response:", airtableResponse);
 
     console.log("✅ Email saved to Airtable");
     res.status(200).send("Subscription received!");
