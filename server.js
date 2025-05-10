@@ -40,7 +40,7 @@ app.post("/subscribe", async (req, res) => {
           records: [
             {
               fields: {
-                Email: email,
+                fldD3JQ8kgcm47ciF: email,
               },
             },
           ],
